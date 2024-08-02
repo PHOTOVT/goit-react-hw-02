@@ -1,0 +1,29 @@
+.optionsContainer {
+  margin-bottom: 40px;
+}
+
+.optionsList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hideButton {
+  display: none;
+}
+
+.optionGood:hover,
+.optionGood:active,
+.optionGood:focus,
+.optionNeutral:hover,
+.optionNeutral:active,
+.optionNeutral:focus,
+.optionBad:hover,
+.optionBad:active,
+.optionBad:focus,
+.showButton:hover,
+.showButton:active,
+.showButton:focus {
+  color: black;
+  background: transparent;
+  border: 2px solid black;
+}
