@@ -1,7 +1,7 @@
 import React from "react";
 import css from "./Options.module.css";
 
-const Options = ({ updateFeedback, buttonResetClass, resetFeedback }) => {
+const Options = ({ updateFeedback, resetFeedback, totalFeedback }) => {
   return (
     <div className={css.optionsContainer}>
       <ul className={css.optionsList}>
@@ -33,13 +33,11 @@ const Options = ({ updateFeedback, buttonResetClass, resetFeedback }) => {
           </button>
         </li>
         <li>
-          <button
-            className={css[buttonResetClass]}
-            type="button"
-            onClick={resetFeedback}
-          >
-            Reset
-          </button>
+          {totalFeedback > 0 ? (
+            <button type="button" onClick={resetFeedback}>
+              Reset
+            </button>
+          ) : null}
         </li>
       </ul>
     </div>

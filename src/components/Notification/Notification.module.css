@@ -1,7 +1,3 @@
-.showNotification {
-    font-weight: 700;
-}
-
-.hideNotification {
-    display: none;
+.notification {
+  font-weight: 700;
 }
