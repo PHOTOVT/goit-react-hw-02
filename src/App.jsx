@@ -35,28 +35,25 @@ function App() {
   const totalFeedback = options.good + options.neutral + options.bad;
   const positiveFeedback = Math.round((options.good / totalFeedback) * 100);
 
-  const feedbackClass = totalFeedback > 0 ? "showFeedback" : "hideFeedback";
-  const notificationClass =
-    totalFeedback > 0 ? "hideNotification" : "showNotification";
-  const buttonResetClass = totalFeedback > 0 ? "showButton" : "hideButton";
-
   return (
     <>
       <Description />
       <Options
         updateFeedback={updateFeedback}
-        buttonResetClass={buttonResetClass}
         resetFeedback={resetFeedback}
-      />
-      <Feedback
-        good={options.good}
-        neutral={options.neutral}
-        bad={options.bad}
         totalFeedback={totalFeedback}
-        feedbackClass={feedbackClass}
-        positiveFeedback={positiveFeedback}
       />
-      <Notification notificationClass={notificationClass} />
+      {totalFeedback > 0 ? (
+        <Feedback
+          good={options.good}
+          neutral={options.neutral}
+          bad={options.bad}
+          totalFeedback={totalFeedback}
+          positiveFeedback={positiveFeedback}
+        />
+      ) : (
+        <Notification />
+      )}
     </>
   );
 }
