@@ -13,17 +13,15 @@
 
 .optionGood:hover,
 .optionGood:active,
-.optionGood:focus,
 .optionNeutral:hover,
 .optionNeutral:active,
-.optionNeutral:focus,
 .optionBad:hover,
 .optionBad:active,
-.optionBad:focus,
 .showButton:hover,
 .showButton:active,
-.showButton:focus {
+.buttonReset:hover,
+.buttonReset:active {
   color: black;
   background: transparent;
-  border: 2px solid black;
+  border: 3px solid black;
 }
