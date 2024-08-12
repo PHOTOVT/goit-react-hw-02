@@ -1,14 +1,15 @@
 import React from "react";
+import css from "./Feedback.module.css";
 
 const Feedback = ({ good, neutral, bad, totalFeedback, positiveFeedback }) => {
   return (
     <div>
-      <ul>
-        <li>Good: {good}</li>
-        <li>Neutral: {neutral}</li>
-        <li>Bad: {bad}</li>
-        <li>Total: {totalFeedback}</li>
-        <li>Positive: {positiveFeedback}%</li>
+      <ul className={css.feedbackList}>
+        <li className={css.feedbackListItem}>Good: {good}</li>
+        <li className={css.feedbackListItem}>Neutral: {neutral}</li>
+        <li className={css.feedbackListItem}>Bad: {bad}</li>
+        <li className={css.feedbackListItem}>Total: {totalFeedback}</li>
+        <li className={css.feedbackListItem}>Positive: {positiveFeedback}%</li>
       </ul>
     </div>
   );

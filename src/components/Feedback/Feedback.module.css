@@ -1,0 +1,8 @@
+.feedbackList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.feedbackListItem {
+  font-size: 20px;
+}

@@ -4,11 +4,21 @@
 
 .optionsList {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
   justify-content: space-evenly;
 }
 
-.hideButton {
-  display: none;
+.optionGood,
+.optionNeutral,
+.optionBad,
+.showButton,
+.buttonReset {
+  font-size: 20px;
+  height: 75px;
+  width: 150px;
+  color: black;
+  background: blanchedalmond;
 }
 
 .optionGood:hover,
@@ -21,7 +31,7 @@
 .showButton:active,
 .buttonReset:hover,
 .buttonReset:active {
-  color: black;
+  color: blanchedalmond;
   background: transparent;
-  border: 3px solid black;
+  border: 2px solid blanchedalmond;
 }
