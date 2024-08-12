@@ -13,7 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -21,8 +22,8 @@ ul, ol {
 
 body {
   font-family: "Outfit";
-  color: white;
-  background:darkmagenta;
+  color: black;
+  background: lightsalmon;
   margin: 0;
   display: flex;
   place-items: center;
@@ -32,7 +33,7 @@ body {
 
 button {
   border-radius: 8px;
-  border: 2px solid blanchedalmond;
+  border: 2px solid salmon;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 400;

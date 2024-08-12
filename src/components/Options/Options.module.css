@@ -4,9 +4,8 @@
 
 .optionsList {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: space-evenly;
+  gap: 50px;
+  justify-content: center;
 }
 
 .optionGood,
@@ -18,7 +17,7 @@
   height: 75px;
   width: 150px;
   color: black;
-  background: blanchedalmond;
+  background: salmon;
 }
 
 .optionGood:hover,
@@ -31,7 +30,7 @@
 .showButton:active,
 .buttonReset:hover,
 .buttonReset:active {
-  color: blanchedalmond;
+  color: black;
   background: transparent;
-  border: 2px solid blanchedalmond;
+  border: 2px solid salmon;
 }
