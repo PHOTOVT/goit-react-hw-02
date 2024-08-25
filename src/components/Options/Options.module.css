@@ -4,7 +4,7 @@
 
 .optionsList {
   display: flex;
-  gap: 50px;
+  gap: 25px;
   justify-content: center;
 }
 
@@ -16,8 +16,8 @@
   font-size: 20px;
   height: 75px;
   width: 150px;
-  color: black;
-  background: salmon;
+  color: lemonchiffon;
+  background: crimson;
 }
 
 .optionGood:hover,
@@ -30,7 +30,7 @@
 .showButton:active,
 .buttonReset:hover,
 .buttonReset:active {
-  color: black;
+  color: crimson;
   background: transparent;
-  border: 2px solid salmon;
+  border: 2px solid crimson;
 }

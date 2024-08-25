@@ -23,7 +23,7 @@ ol {
 body {
   font-family: "Outfit";
   color: black;
-  background: lightsalmon;
+  background: lemonchiffon;
   margin: 0;
   display: flex;
   place-items: center;
@@ -32,13 +32,11 @@ body {
 }
 
 button {
+  border: 2px solid crimson;
   border-radius: 8px;
-  border: 2px solid salmon;
   padding: 0.6em 1.2em;
-  font-size: 1em;
   font-weight: 400;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
